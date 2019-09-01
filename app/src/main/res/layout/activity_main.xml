@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/layout_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:contentDescription="@string/about"
+            android:src="@drawable/ic_dashboard_black_150dp"
+            android:scaleType="fitCenter"
+            android:layout_margin="8dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:gravity="center"
+            android:padding="8dp"
+            android:layout_toEndOf="@id/logo"
+            android:background="@color/colorPrimaryDark"
+            android:textAlignment="center"
+            android:id="@+id/header"
+            android:text="@string/app_name"
+            android:textColor="@color/colorAccent"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textSize="36sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/wrap_info"
+        android:layout_below="@id/layout_header"
+        android:layout_toStartOf="@id/button_about"
+        android:text="@string/app_wrap_info"
+        android:textColor="@color/colorAccent"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_margin="8dp"
+        android:id="@+id/button_mat_input"
+        android:onClick="InputClicked"
+        android:text="@string/quest_mat_input"
+        android:textSize="16sp"
+        android:layout_centerVertical="true"
+        android:background="@color/colorButtonBackgroud"
+        android:textColor="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/button_mat_output"
+        android:text="@string/quest_mat_output"
+        android:onClick="OutputClicked"
+        android:textSize="16sp"
+        android:layout_margin="8dp"
+        android:layout_below="@id/button_mat_input"
+        android:layout_centerVertical="true"
+        android:background="@color/colorButtonBackgroud"
+        android:textColor="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Add the About button here. Important for information about the publisher -->
+    <ImageButton
+        android:id="@+id/button_about"
+        android:onClick="AboutClicked"
+        android:layout_marginEnd="8dp"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="@string/about"
+        android:src="@drawable/ic_info_white_150dp"
+        android:scaleType="fitCenter"
+        android:background="@android:color/transparent"
+        android:layout_below="@id/layout_header"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+</RelativeLayout>

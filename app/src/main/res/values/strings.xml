@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MatRank</string>
+    <string name="app_disc">Welcome to the Matrix Rank Calculator. This app allows you to calculate the rank of any matrix of any order.</string>
+    <string name="app_wrap_info">The Matrix Rank calculator. Make your work faster and easier.</string>
+    <string name="quest_mat_input">Enter the Matrix</string>
+    <string name="quest_mat_output">See the Output</string>
+    <string name="about">About</string>
+</resources>
