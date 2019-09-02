@@ -8,8 +8,6 @@ public class Rank {
     static int Row = 3;
     static int Col = 3;
 
-    static int[][] matrix = null;
-
     // To swap two rows
     private static void swap(int[][] mat, int row1, int row2, int col) {
         for (int i = 0; i < col; i++) {
@@ -66,7 +64,6 @@ public class Rank {
             }
         }
 
-        Rank.matrix = mat;
         return rank;
     }
 
