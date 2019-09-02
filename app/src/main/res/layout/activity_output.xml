@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".OutputActivity">
+
+    <RelativeLayout
+        android:id="@+id/layout_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/submit"
+            android:contentDescription="@string/about"
+            android:src="@drawable/ic_dashboard_green_150dp"
+            android:scaleType="fitCenter"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="8dp"
+            android:layout_centerVertical="true"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:gravity="center"
+            android:padding="8dp"
+            android:layout_toEndOf="@id/button_back"
+            android:background="@color/colorPrimaryDark"
+            android:textAlignment="center"
+            android:id="@+id/header"
+            android:text="@string/app_name"
+            android:textColor="@color/colorAccent"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textSize="36sp"
+            android:layout_toStartOf="@id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:id="@+id/button_back"
+            android:layout_margin="8dp"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/about"
+            android:src="@drawable/ic_arrow_back_150dp"
+            android:scaleType="fitCenter"
+            android:onClick="BackButtonClicked"
+            android:background="@android:color/transparent"
+            android:layout_width="40dp"
+            android:layout_height="30dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_below="@id/layout_header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/matrix_container"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@android:color/darker_gray"
+            android:hint="Matrix Appears here"
+            android:textSize="24sp"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:layout_above="@id/text_rank"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/text_rank"
+            android:text="Rank : "
+            android:textSize="32sp"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:outlineAmbientShadowColor="@color/colorAccent"
+            android:outlineSpotShadowColor="@color/colorAccent"
+            android:textColorLink="@color/colorAccent"
+            android:shadowColor="@color/colorAccent"
+            android:textColorHighlight="@color/colorAccent"
+            android:textColorHint="@android:color/darker_gray"
+            android:textColor="@color/colorAccent"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

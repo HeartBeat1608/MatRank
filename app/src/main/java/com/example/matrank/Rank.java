@@ -1,13 +1,17 @@
 package com.example.matrank;
 
+import java.util.Locale;
+
 public class Rank {
 
     // Some constants
     static int Row = 3;
     static int Col = 3;
 
+    static int[][] matrix = null;
+
     // To swap two rows
-    private void swap(int[][] mat, int row1, int row2, int col) {
+    private static void swap(int[][] mat, int row1, int row2, int col) {
         for (int i = 0; i < col; i++) {
             int temp = mat[row1][i];
             mat[row1][i] = mat[row2][i];
@@ -16,7 +20,8 @@ public class Rank {
     }
 
     // Display the matrix in the console
-    private void display(int[][] mat) {
+    @Deprecated
+    public void display(int[][] mat) {
         for (int i = 0; i < Row; i++) {
             for (int j = 0; j < Col; j++) {
                 System.out.print(mat[i][j] + " ");  // Element (i, j) in the matrix
@@ -25,12 +30,12 @@ public class Rank {
         }
     }
 
-    private int getRank(int[][] mat) {
-        int rank = Math.min(Row, Col);
+    static int getRank(int[][] mat) {
+        int rank = Math.min(Rank.Row, Rank.Col);
 
         for (int row = 0; row < rank; row++) {
             if (mat[row][row] != 0) {
-                for (int col = 0; col < Row; col++) {
+                for (int col = 0; col < Rank.Row; col++) {
                     if (col != row) {
                         double multi = (double) mat[col][row] / mat[row][row];
                         for (int i = 0; i < rank; i++) {
@@ -61,6 +66,20 @@ public class Rank {
             }
         }
 
+        Rank.matrix = mat;
         return rank;
+    }
+
+    static String getStringMatrix(int[][] mat, int rows, int cols) {
+        String res = "";
+
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                res += String.format(Locale.US, "%d ", mat[i][j]);
+            }
+            res += String.format("%s\n", res);
+        }
+
+        return res;
     }
 }

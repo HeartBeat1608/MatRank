@@ -9,6 +9,8 @@
         android:roundIcon="@drawable/ic_dashboard_black_150dp"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".OutputActivity"></activity>
+        <activity android:name=".InputActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

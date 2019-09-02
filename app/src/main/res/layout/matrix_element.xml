@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:hint="@string/element_value_default"
+        android:textSize="28sp"
+        android:shadowColor="@color/colorAccent"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorAccent"
+        android:textColorHighlight="@color/colorAccent"
+        android:textColorLink="@color/colorPrimaryDark"
+        android:id="@+id/element"
+        android:inputType="number"
+        android:padding="8dp"
+        android:layout_margin="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:importantForAutofill="no" />
+
+</RelativeLayout>

@@ -5,4 +5,7 @@
     <string name="quest_mat_input">Enter the Matrix</string>
     <string name="quest_mat_output">See the Output</string>
     <string name="about">About</string>
+
+    <string name="element_value_default">0</string>
+    <string name="query_element_hint">Enter Row of the Matrix.</string>
 </resources>
