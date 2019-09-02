@@ -77,7 +77,7 @@ public class Rank {
             for (int j = 0; j < cols; j++) {
                 res += String.format(Locale.US, "%d ", mat[i][j]);
             }
-            res += String.format("%s\n", res);
+            res = String.format(Locale.US, "%s\n", res);
         }
 
         return res;
