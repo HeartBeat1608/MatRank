@@ -13,7 +13,6 @@ import androidx.appcompat.app.AppCompatActivity;
 public class MainActivity extends AppCompatActivity {
 
     final int INPUT_REQUEST_CODE = 0x08;
-    final int OUTPUT_REQUEST_CODE = 0x16;
 
     Button btn_input, btn_output;
     ImageButton btn_about;
@@ -28,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
         btn_about = findViewById(R.id.button_about);
         btn_input = findViewById(R.id.button_mat_input);
-        btn_output = findViewById(R.id.button_mat_output);
+        btn_output = findViewById(R.id.button_mat_row_echelon);
     }
 
     @Override

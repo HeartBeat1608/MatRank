@@ -81,10 +81,39 @@
             android:layout_height="150dp" />
 
         <Button
-            android:id="@+id/button_mat_output"
-            android:text="@string/quest_mat_output"
+            android:id="@+id/button_mat_row_echelon"
+            android:text="@string/quest_mat_determinant"
+            android:onClick="OutputClicked"
+            android:textSize="13sp"
+            android:padding="12dp"
+            android:layout_margin="8dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/button_mat_input"
+            android:background="@color/colorButtonBackgroud"
+            android:textColor="@color/colorAccent"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+
+        <Button
+            android:layout_margin="8dp"
+            android:id="@+id/button_mat_determinant"
+            android:onClick="InputClicked"
+            android:text="@string/quest_mat_row_echelon"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:layout_centerVertical="true"
+            android:layout_below="@id/button_mat_input"
+            android:background="@color/colorButtonBackgroud"
+            android:textColor="@color/colorAccent"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+
+        <Button
+            android:id="@+id/button_mat_normal"
+            android:text="@string/quest_mat_normal"
             android:onClick="OutputClicked"
             android:textSize="16sp"
+            android:layout_below="@id/button_mat_row_echelon"
             android:padding="12dp"
             android:layout_margin="8dp"
             android:layout_centerVertical="true"

@@ -3,9 +3,13 @@
     <string name="app_disc">Welcome to the Matrix Rank Calculator. This app allows you to calculate the rank of any matrix of any order.</string>
     <string name="app_wrap_info">The Matrix Rank calculator. Make your work faster and easier.</string>
     <string name="quest_mat_input">Enter the Matrix</string>
-    <string name="quest_mat_output">See the Output</string>
+    <string name="quest_mat_row_echelon">Row Echelon Rank</string>
+    <string name="quest_mat_normal">Normal Rank</string>
+    <string name="quest_mat_determinant">Determinant Rank</string>
     <string name="about">About</string>
 
     <string name="element_value_default">0</string>
     <string name="query_element_hint">Enter Row of the Matrix.</string>
+
+    <string name="text_RANK">RANK : </string>
 </resources>
